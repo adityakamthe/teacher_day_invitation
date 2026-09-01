@@ -221,30 +221,32 @@ export default function InvitationCard({
               </div>
             </div>
 
-            {/* Recipient Photo / Initials Badge */}
-            <div className="relative py-2">
-              <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-tr from-gold-deep via-gold-light to-gold shadow-md">
-                {/* Spinning dashed decorative ring */}
-                <div className="absolute -inset-2 rounded-full border border-dashed border-gold/60 animate-slow-spin pointer-events-none" />
+            {/* Recipient Photo / Initials Badge (Faculty only, hidden for VIP) */}
+            {!isVip && (
+              <div className="relative py-2">
+                <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-tr from-gold-deep via-gold-light to-gold shadow-md">
+                  {/* Spinning dashed decorative ring */}
+                  <div className="absolute -inset-2 rounded-full border border-dashed border-gold/60 animate-slow-spin pointer-events-none" />
 
-                <div className="w-full h-full rounded-full overflow-hidden border-2 border-paper relative bg-gradient-to-br from-sand to-ivory flex items-center justify-center">
-                  {faculty.photo ? (
-                    <Image
-                      src={faculty.photo}
-                      alt={faculty.name}
-                      fill
-                      sizes="128px"
-                      className="object-cover object-top"
-                      priority
-                    />
-                  ) : (
-                    <span className="font-serif text-3xl sm:text-4xl font-bold text-maroon">
-                      {getInitials(faculty.name)}
-                    </span>
-                  )}
+                  <div className="w-full h-full rounded-full overflow-hidden border-2 border-paper relative bg-gradient-to-br from-sand to-ivory flex items-center justify-center">
+                    {faculty.photo ? (
+                      <Image
+                        src={faculty.photo}
+                        alt={faculty.name}
+                        fill
+                        sizes="128px"
+                        className="object-cover object-top"
+                        priority
+                      />
+                    ) : (
+                      <span className="font-serif text-3xl sm:text-4xl font-bold text-maroon">
+                        {getInitials(faculty.name)}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
 
             {/* Recipient Name and Designation */}
             <div className="space-y-1">

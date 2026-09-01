@@ -270,8 +270,8 @@ export default function InviteIndexPage() {
                       className="bg-paper/95 backdrop-blur-md rounded-2xl p-4 border border-gold/50 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between space-y-3"
                     >
                       <div className="flex items-center gap-3.5">
-                        <div className="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 border-2 border-gold-deep bg-gradient-to-br from-gold-light/40 to-sand flex items-center justify-center font-serif font-bold text-maroon text-lg shadow-inner">
-                          {v.name.replace(/^(The\s|Dr\.\s|Prof\.\s)/i, "").slice(0, 2).toUpperCase()}
+                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-gold-light/40 to-sand border-2 border-gold-deep flex items-center justify-center flex-shrink-0 text-maroon shadow-xs">
+                          <Crown className="w-6 h-6 text-gold-deep" />
                         </div>
 
                         <div className="min-w-0 flex-1">
