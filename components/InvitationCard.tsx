@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Calendar, Clock, MapPin, Sparkles, Heart, QrCode as QrIcon } from "lucide-react";
-import QrInviteModal from "@/components/QrInviteModal";
+import { Calendar, Clock, MapPin, Sparkles, Heart } from "lucide-react";
 
 interface FacultyMember {
   id?: number;
@@ -78,7 +77,6 @@ export default function InvitationCard({
   showMessageButton = true,
 }: InvitationCardProps) {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
-  const [isQrOpen, setIsQrOpen] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -346,34 +344,10 @@ export default function InvitationCard({
                   <Sparkles className="w-4 h-4 text-flame-core" />
                 </motion.button>
               )}
-
-              <button
-                type="button"
-                onClick={() => setIsQrOpen(true)}
-                className="py-1.5 px-4 rounded-full bg-sand/60 hover:bg-sand text-ink text-xs font-semibold flex items-center justify-center gap-1.5 border border-gold/30 transition hover:scale-105"
-              >
-                <QrIcon className="w-3.5 h-3.5 text-gold-deep" />
-                <span>View &amp; Save Invitation QR Pass</span>
-              </button>
             </div>
           </div>
         </div>
       </motion.div>
-
-      {/* QR Modal */}
-      <QrInviteModal
-        isOpen={isQrOpen}
-        onClose={() => setIsQrOpen(false)}
-        person={{
-          slug: faculty.slug,
-          name: faculty.name,
-          designation: faculty.designation,
-          photo: faculty.photo,
-          category: faculty.category,
-          isVip: isVip,
-          sender: sender,
-        }}
-      />
     </div>
   );
 }
