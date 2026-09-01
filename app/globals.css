@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ivory: #FBF3E4;
+  --sand: #F3E1BE;
+  --paper: #FFFCF4;
+  --gold: #B27F2E;
+  --gold-light: #E8C77E;
+  --gold-deep: #8C6222;
+  --maroon: #7A2A2E;
+  --ink: #3D2B1E;
+  --ink-soft: #6B5842;
+  --flame: #FF9142;
+  --flame-core: #FFD98A;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--ink);
+  font-family: var(--font-mukta), sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* 3D Perspective Context */
+.perspective-container {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Custom Foil and Shimmer effects */
+.gold-shimmer {
+  background: linear-gradient(
+    110deg,
+    #b27f2e 0%,
+    #e8c77e 25%,
+    #fff8e7 50%,
+    #e8c77e 75%,
+    #8c6222 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.animate-shine {
+  animation: shine 6s linear infinite;
+}
+
+/* Reduced motion overrides */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "slug": "madhuri-n-jadhav",
+    "name": "Dr. Madhuri N. Jadhav",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/madhuri-n-jadhav.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 2,
+    "slug": "anil-d-gujar",
+    "name": "Prof. Anil D. Gujar",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/anil-d-gujar.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 3,
+    "slug": "deepa-a-padalkar",
+    "name": "Dr. Deepa A. Padalkar",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/deepa-a-padalkar.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 4,
+    "slug": "puja-r-patil",
+    "name": "Prof. Puja R. Patil",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/puja-r-patil.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 5,
+    "slug": "shubhangi-s-bhagat",
+    "name": "Prof. Shubhangi S. Bhagat",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/shubhangi-s-bhagat.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 6,
+    "slug": "arti-d-dhumal",
+    "name": "Prof. Arti D. Dhumal",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/arti-d-dhumal.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 7,
+    "slug": "nikita-g-khandare",
+    "name": "Prof. Nikita G. Khandare",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/nikita-g-khandare.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 8,
+    "slug": "pooja-r-raut",
+    "name": "Prof. Pooja R. Raut",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/pooja-r-raut.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 9,
+    "slug": "varsharani-r-yedage",
+    "name": "Prof. Varsharani R. Yedage",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/varsharani-r-yedage.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 10,
+    "slug": "anuja-m-yelve",
+    "name": "Prof. Anuja M. Yelve",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/anuja-m-yelve.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 11,
+    "slug": "sneha-p-dhule",
+    "name": "Prof. Sneha P. Dhule",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/sneha-p-dhule.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 12,
+    "slug": "shital-n-kalpande",
+    "name": "Prof. Shital N. Kalpande",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/shital-n-kalpande.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 13,
+    "slug": "ajay-t-aiwale",
+    "name": "Prof. Ajay T. Aiwale",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/ajay-t-aiwale.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 14,
+    "slug": "parveen-kumari",
+    "name": "Prof. Parveen Kumari",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/parveen-kumari.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 15,
+    "slug": "soujanya-bhavimani",
+    "name": "Prof. Soujanya Bhavimani",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/soujanya-bhavimani.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 16,
+    "slug": "kamal-shippurkar",
+    "name": "Prof. Kamal Shippurkar",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/kamal-shippurkar.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 17,
+    "slug": "aarti-bobade",
+    "name": "Prof. Aarti Bobade",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/aarti-bobade.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 18,
+    "slug": "priya-d-bhole",
+    "name": "Prof. Priya D Bhole",
+    "designation": "Assistant Professor",
+    "photo": "/faculty/priya-d-bhole.jpg",
+    "category": "Teaching Faculty"
+  },
+  {
+    "id": 19,
+    "slug": "shrinivas-vairagal",
+    "name": "Mr. Shrinivas Vairagal",
+    "designation": "Technical Assistant",
+    "photo": "/faculty/shrinivas-vairagal.jpg",
+    "category": "Technical Assistant"
+  },
+  {
+    "id": 20,
+    "slug": "pooja-durgade",
+    "name": "Mrs. Pooja Durgade",
+    "designation": "Technical Assistant",
+    "photo": "/faculty/pooja-durgade.jpg",
+    "category": "Technical Assistant"
+  },
+  {
+    "id": 21,
+    "slug": "priyanka-pawar",
+    "name": "Ms. Priyanka Pawar",
+    "designation": "Technical Assistant",
+    "photo": "/faculty/priyanka-pawar.jpg",
+    "category": "Technical Assistant"
+  },
+  {
+    "id": 22,
+    "slug": "tejal-gangane",
+    "name": "Ms. Tejal Gangane",
+    "designation": "Technical Assistant",
+    "photo": "/faculty/tejal-gangane.jpg",
+    "category": "Technical Assistant"
+  },
+  {
+    "id": 23,
+    "slug": "virbhadra-nila",
+    "name": "Mr. Virbhadra Nila",
+    "designation": "Technical Assistant",
+    "photo": "/faculty/virbhadra-nila.jpg",
+    "category": "Technical Assistant"
+  },
+  {
+    "id": 24,
+    "slug": "rohini-k-dubal",
+    "name": "Ms. Rohini. K. Dubal",
+    "designation": "Technical Assistant",
+    "photo": "/faculty/rohini-k-dubal.jpg",
+    "category": "Technical Assistant"
+  }
+]

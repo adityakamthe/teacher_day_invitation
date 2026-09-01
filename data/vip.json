@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "director",
+    "name": "The Director",
+    "designation": "Director",
+    "photo": null,
+    "sender": "Dr. M. N. Jadhav, HOD — Department of Computer Engineering",
+    "salutation": "Respected Director Sir / Ma'am",
+    "lead": "On this joyous Teachers' Day, the Department of Computer Engineering wishes to celebrate the visionary leadership and support you bring to our institution every single day.",
+    "paragraphs": [
+      "On this joyous Teachers' Day, the Department of Computer Engineering wishes to celebrate the visionary leadership and unwavering support you bring to our institution every single day.",
+      "Your strategic direction and wisdom shape not just our department's milestones, but the foundation and future of every aspiring engineer who walks through our portals.",
+      "We are profoundly grateful to have your inspiring guidance lighting our path. We cordially request the honor of your gracious presence to celebrate this special day with us."
+    ],
+    "closing": "Wishing you a very Happy Teachers' Day!",
+    "signature": "With highest respect & gratitude,\nDr. M. N. Jadhav\nHOD, Department of Computer Engineering\nBSCOER, Pune"
+  },
+  {
+    "slug": "vikas-jadhav",
+    "name": "Prof. Vikas Jadhav",
+    "designation": "Professor",
+    "photo": null,
+    "sender": "Dr. M. N. Jadhav, HOD — Department of Computer Engineering",
+    "salutation": "Dear Prof. Vikas Sir",
+    "lead": "A very Happy Teachers' Day to you! Your energy, dedication, and the way you connect with students make our department a livelier and inspiring place.",
+    "paragraphs": [
+      "A very Happy Teachers' Day to you! Your tireless enthusiasm, dedication, and effortless connection with students make our department an inspiring and vibrant place to learn and teach.",
+      "Thank you for every insightful lecture, every bit of patient guidance, and every moment of encouragement you provide so generously to our students and faculty fraternity.",
+      "We warmly invite you to join us as we celebrate and honor your invaluable contributions to our department."
+    ],
+    "closing": "Wishing you a joyful Teachers' Day!",
+    "signature": "Warmly & with great regards,\nDr. M. N. Jadhav\nHOD, Department of Computer Engineering\nBSCOER, Pune"
+  },
+  {
+    "slug": "principal-deshmukh",
+    "name": "Dr. S. S. Deshmukh",
+    "designation": "Principal",
+    "photo": null,
+    "sender": "Dr. M. N. Jadhav, HOD — Department of Computer Engineering",
+    "salutation": "Respected Dr. Deshmukh Sir",
+    "lead": "On behalf of the Department of Computer Engineering, a very Happy Teachers' Day! Your leadership and unwavering support have been our department's backbone.",
+    "paragraphs": [
+      "On behalf of the Department of Computer Engineering, a very Happy Teachers' Day to you! Your dynamic leadership and steadfast support have been the backbone of our department's growth and every milestone we achieve.",
+      "We deeply appreciate the continuous trust, encouragement, and progressive environment you foster for faculty and students alike across the campus.",
+      "We would be truly honored by your esteemed presence as our Chief Dignitary to grace this memorable Teachers' Day celebration."
+    ],
+    "closing": "Wishing you a most inspiring Teachers' Day!",
+    "signature": "With heartfelt regards & respect,\nDr. M. N. Jadhav\nHOD, Department of Computer Engineering\nBSCOER, Pune"
+  }
+]

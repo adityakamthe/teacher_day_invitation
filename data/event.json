@@ -1,0 +1,27 @@
+{
+  "eventName": "Teachers' Day Celebration",
+  "academicYear": "2026",
+  "college": "Bhivarabai Sawant College of Engineering and Research",
+  "trust": "The Shetkari Shikshan Mandal's",
+  "department": "Department of Computer Engineering",
+  "hostedBy": "Team Aces",
+  "date": "Saturday, 5th September 2026",
+  "time": "10:00 AM onwards",
+  "venue": "Seminar Hall, 3rd Floor, A-Building, BSCOER Pune",
+  "quote": {
+    "sanskrit": "तमसो मा ज्योतिर्गमय",
+    "transliteration": "tamaso mā jyotir gamaya",
+    "meaning": "Lead me from darkness into light"
+  },
+  "message": {
+    "salutation": "Dear Respected",
+    "lead": "On this special occasion of Teachers' Day, we want to take a moment to express our deepest gratitude for everything you do for us.",
+    "paragraphs": [
+      "Your guidance, encouragement, and dedication inspire us every single day to push beyond our limits and achieve our fullest potential.",
+      "Beyond the lectures and coursework, it is your mentorship, patience, and warmth that shape our journey as engineers and as human beings.",
+      "Thank you for illuminating our paths and believing in us even when we doubted ourselves. We are truly fortunate to learn under your inspiring leadership."
+    ],
+    "closing": "Wishing you a very Happy Teachers' Day!",
+    "signature": "With immense gratitude & respect,\nTeam Aces (Computer Engineering Students)"
+  }
+}
