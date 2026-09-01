@@ -9,9 +9,9 @@ machine, design tokens — this is a **new content tier**, not a new app.
 Add 3 special, higher-touch invitations, distinct from the 24 standard
 faculty/staff ones already built:
 
-1. **The Director**
-2. **Prof. Vikas Jadhav**
-3. **The Principal, Dr. S. S. Deshmukh**
+1. **Dr. S. R. Thite** (Campus Director)
+2. **Mr. Vikas Jadhav**
+3. **Dr. S. S. Deshmukh** (Principal)
 
 Two things are different for these three, and only these three:
 - **Sender**: these come personally from **Dr. M. N. Jadhav, HOD —

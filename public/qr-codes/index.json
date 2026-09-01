@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-01T10:04:59.528Z",
+  "generatedAt": "2026-09-01T11:00:25.015Z",
   "event": "Teachers' Day Celebration",
   "baseUrl": "https://teachers-day-invite.vercel.app",
   "vips": [
     {
       "slug": "director",
-      "name": "The Director",
-      "designation": "Director",
+      "name": "Dr. S. R. Thite",
+      "designation": "Campus Director",
       "url": "https://teachers-day-invite.vercel.app/invite/vip/director",
       "qrImage": "/qr-codes/vip_director.png"
     },
     {
       "slug": "vikas-jadhav",
-      "name": "Prof. Vikas Jadhav",
-      "designation": "Professor",
+      "name": "Mr. Vikas Jadhav",
+      "designation": "Executive",
       "url": "https://teachers-day-invite.vercel.app/invite/vip/vikas-jadhav",
       "qrImage": "/qr-codes/vip_vikas-jadhav.png"
     },
