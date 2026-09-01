@@ -173,7 +173,7 @@ for shared, non-per-person content:
 ```json
 {
   "eventName": "Teachers' Day Celebration",
-  "date": "5 September 2026",
+  "date": "Thursday, 3rd September 2026",
   "time": "TBD",
   "venue": "TBD",
   "department": "Department of Computer Engineering",
