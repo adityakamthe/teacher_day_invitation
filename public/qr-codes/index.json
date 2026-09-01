@@ -1,0 +1,246 @@
+{
+  "generatedAt": "2026-09-01T10:04:59.528Z",
+  "event": "Teachers' Day Celebration",
+  "baseUrl": "https://teachers-day-invite.vercel.app",
+  "vips": [
+    {
+      "slug": "director",
+      "name": "The Director",
+      "designation": "Director",
+      "url": "https://teachers-day-invite.vercel.app/invite/vip/director",
+      "qrImage": "/qr-codes/vip_director.png"
+    },
+    {
+      "slug": "vikas-jadhav",
+      "name": "Prof. Vikas Jadhav",
+      "designation": "Professor",
+      "url": "https://teachers-day-invite.vercel.app/invite/vip/vikas-jadhav",
+      "qrImage": "/qr-codes/vip_vikas-jadhav.png"
+    },
+    {
+      "slug": "principal-deshmukh",
+      "name": "Dr. S. S. Deshmukh",
+      "designation": "Principal",
+      "url": "https://teachers-day-invite.vercel.app/invite/vip/principal-deshmukh",
+      "qrImage": "/qr-codes/vip_principal-deshmukh.png"
+    }
+  ],
+  "faculty": [
+    {
+      "id": 1,
+      "slug": "madhuri-n-jadhav",
+      "name": "Dr. Madhuri N. Jadhav",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/madhuri-n-jadhav",
+      "qrImage": "/qr-codes/faculty_01_madhuri-n-jadhav.png"
+    },
+    {
+      "id": 2,
+      "slug": "anil-d-gujar",
+      "name": "Prof. Anil D. Gujar",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/anil-d-gujar",
+      "qrImage": "/qr-codes/faculty_02_anil-d-gujar.png"
+    },
+    {
+      "id": 3,
+      "slug": "deepa-a-padalkar",
+      "name": "Dr. Deepa A. Padalkar",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/deepa-a-padalkar",
+      "qrImage": "/qr-codes/faculty_03_deepa-a-padalkar.png"
+    },
+    {
+      "id": 4,
+      "slug": "puja-r-patil",
+      "name": "Prof. Puja R. Patil",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/puja-r-patil",
+      "qrImage": "/qr-codes/faculty_04_puja-r-patil.png"
+    },
+    {
+      "id": 5,
+      "slug": "shubhangi-s-bhagat",
+      "name": "Prof. Shubhangi S. Bhagat",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/shubhangi-s-bhagat",
+      "qrImage": "/qr-codes/faculty_05_shubhangi-s-bhagat.png"
+    },
+    {
+      "id": 6,
+      "slug": "arti-d-dhumal",
+      "name": "Prof. Arti D. Dhumal",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/arti-d-dhumal",
+      "qrImage": "/qr-codes/faculty_06_arti-d-dhumal.png"
+    },
+    {
+      "id": 7,
+      "slug": "nikita-g-khandare",
+      "name": "Prof. Nikita G. Khandare",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/nikita-g-khandare",
+      "qrImage": "/qr-codes/faculty_07_nikita-g-khandare.png"
+    },
+    {
+      "id": 8,
+      "slug": "pooja-r-raut",
+      "name": "Prof. Pooja R. Raut",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/pooja-r-raut",
+      "qrImage": "/qr-codes/faculty_08_pooja-r-raut.png"
+    },
+    {
+      "id": 9,
+      "slug": "varsharani-r-yedage",
+      "name": "Prof. Varsharani R. Yedage",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/varsharani-r-yedage",
+      "qrImage": "/qr-codes/faculty_09_varsharani-r-yedage.png"
+    },
+    {
+      "id": 10,
+      "slug": "anuja-m-yelve",
+      "name": "Prof. Anuja M. Yelve",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/anuja-m-yelve",
+      "qrImage": "/qr-codes/faculty_10_anuja-m-yelve.png"
+    },
+    {
+      "id": 11,
+      "slug": "sneha-p-dhule",
+      "name": "Prof. Sneha P. Dhule",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/sneha-p-dhule",
+      "qrImage": "/qr-codes/faculty_11_sneha-p-dhule.png"
+    },
+    {
+      "id": 12,
+      "slug": "shital-n-kalpande",
+      "name": "Prof. Shital N. Kalpande",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/shital-n-kalpande",
+      "qrImage": "/qr-codes/faculty_12_shital-n-kalpande.png"
+    },
+    {
+      "id": 13,
+      "slug": "ajay-t-aiwale",
+      "name": "Prof. Ajay T. Aiwale",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/ajay-t-aiwale",
+      "qrImage": "/qr-codes/faculty_13_ajay-t-aiwale.png"
+    },
+    {
+      "id": 14,
+      "slug": "parveen-kumari",
+      "name": "Prof. Parveen Kumari",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/parveen-kumari",
+      "qrImage": "/qr-codes/faculty_14_parveen-kumari.png"
+    },
+    {
+      "id": 15,
+      "slug": "soujanya-bhavimani",
+      "name": "Prof. Soujanya Bhavimani",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/soujanya-bhavimani",
+      "qrImage": "/qr-codes/faculty_15_soujanya-bhavimani.png"
+    },
+    {
+      "id": 16,
+      "slug": "kamal-shippurkar",
+      "name": "Prof. Kamal Shippurkar",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/kamal-shippurkar",
+      "qrImage": "/qr-codes/faculty_16_kamal-shippurkar.png"
+    },
+    {
+      "id": 17,
+      "slug": "aarti-bobade",
+      "name": "Prof. Aarti Bobade",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/aarti-bobade",
+      "qrImage": "/qr-codes/faculty_17_aarti-bobade.png"
+    },
+    {
+      "id": 18,
+      "slug": "priya-d-bhole",
+      "name": "Prof. Priya D Bhole",
+      "designation": "Assistant Professor",
+      "category": "Teaching Faculty",
+      "url": "https://teachers-day-invite.vercel.app/invite/priya-d-bhole",
+      "qrImage": "/qr-codes/faculty_18_priya-d-bhole.png"
+    },
+    {
+      "id": 19,
+      "slug": "shrinivas-vairagal",
+      "name": "Mr. Shrinivas Vairagal",
+      "designation": "Technical Assistant",
+      "category": "Technical Assistant",
+      "url": "https://teachers-day-invite.vercel.app/invite/shrinivas-vairagal",
+      "qrImage": "/qr-codes/faculty_19_shrinivas-vairagal.png"
+    },
+    {
+      "id": 20,
+      "slug": "pooja-durgade",
+      "name": "Mrs. Pooja Durgade",
+      "designation": "Technical Assistant",
+      "category": "Technical Assistant",
+      "url": "https://teachers-day-invite.vercel.app/invite/pooja-durgade",
+      "qrImage": "/qr-codes/faculty_20_pooja-durgade.png"
+    },
+    {
+      "id": 21,
+      "slug": "priyanka-pawar",
+      "name": "Ms. Priyanka Pawar",
+      "designation": "Technical Assistant",
+      "category": "Technical Assistant",
+      "url": "https://teachers-day-invite.vercel.app/invite/priyanka-pawar",
+      "qrImage": "/qr-codes/faculty_21_priyanka-pawar.png"
+    },
+    {
+      "id": 22,
+      "slug": "tejal-gangane",
+      "name": "Ms. Tejal Gangane",
+      "designation": "Technical Assistant",
+      "category": "Technical Assistant",
+      "url": "https://teachers-day-invite.vercel.app/invite/tejal-gangane",
+      "qrImage": "/qr-codes/faculty_22_tejal-gangane.png"
+    },
+    {
+      "id": 23,
+      "slug": "virbhadra-nila",
+      "name": "Mr. Virbhadra Nila",
+      "designation": "Technical Assistant",
+      "category": "Technical Assistant",
+      "url": "https://teachers-day-invite.vercel.app/invite/virbhadra-nila",
+      "qrImage": "/qr-codes/faculty_23_virbhadra-nila.png"
+    },
+    {
+      "id": 24,
+      "slug": "rohini-k-dubal",
+      "name": "Ms. Rohini. K. Dubal",
+      "designation": "Technical Assistant",
+      "category": "Technical Assistant",
+      "url": "https://teachers-day-invite.vercel.app/invite/rohini-k-dubal",
+      "qrImage": "/qr-codes/faculty_24_rohini-k-dubal.png"
+    }
+  ]
+}

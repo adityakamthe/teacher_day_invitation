@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Calendar, Clock, MapPin, Sparkles, Heart } from "lucide-react";
+import { Calendar, Clock, MapPin, Sparkles, Heart, QrCode as QrIcon } from "lucide-react";
+import QrInviteModal from "@/components/QrInviteModal";
 
 interface FacultyMember {
   id?: number;
@@ -77,6 +78,7 @@ export default function InvitationCard({
   showMessageButton = true,
 }: InvitationCardProps) {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
+  const [isQrOpen, setIsQrOpen] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -325,25 +327,51 @@ export default function InvitationCard({
               </div>
             </div>
 
-            {/* CTA Button to Read Message */}
-            {showMessageButton && (
-              <motion.button
+            {/* Action Buttons */}
+            <div className="w-full flex flex-col items-center gap-2 pt-1">
+              {showMessageButton && (
+                <motion.button
+                  type="button"
+                  onClick={onReadMessage}
+                  whileHover={{ scale: 1.03, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full max-w-[320px] py-3 px-6 rounded-full bg-gradient-to-r from-gold via-gold-deep to-maroon text-paper font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 border border-gold-light/40"
+                >
+                  <Heart className="w-4 h-4 text-flame-core fill-flame-core animate-pulse" />
+                  <span>
+                    {customButtonLabel || (isVip ? "Read personal message from HOD" : "Read our personal message for you")}
+                  </span>
+                  <Sparkles className="w-4 h-4 text-flame-core" />
+                </motion.button>
+              )}
+
+              <button
                 type="button"
-                onClick={onReadMessage}
-                whileHover={{ scale: 1.03, y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                className="mt-2 w-full max-w-[320px] py-3 px-6 rounded-full bg-gradient-to-r from-gold via-gold-deep to-maroon text-paper font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 border border-gold-light/40"
+                onClick={() => setIsQrOpen(true)}
+                className="py-1.5 px-4 rounded-full bg-sand/60 hover:bg-sand text-ink text-xs font-semibold flex items-center justify-center gap-1.5 border border-gold/30 transition hover:scale-105"
               >
-                <Heart className="w-4 h-4 text-flame-core fill-flame-core animate-pulse" />
-                <span>
-                  {customButtonLabel || (isVip ? "Read personal message from HOD" : "Read our personal message for you")}
-                </span>
-                <Sparkles className="w-4 h-4 text-flame-core" />
-              </motion.button>
-            )}
+                <QrIcon className="w-3.5 h-3.5 text-gold-deep" />
+                <span>View &amp; Save Invitation QR Pass</span>
+              </button>
+            </div>
           </div>
         </div>
       </motion.div>
+
+      {/* QR Modal */}
+      <QrInviteModal
+        isOpen={isQrOpen}
+        onClose={() => setIsQrOpen(false)}
+        person={{
+          slug: faculty.slug,
+          name: faculty.name,
+          designation: faculty.designation,
+          photo: faculty.photo,
+          category: faculty.category,
+          isVip: isVip,
+          sender: sender,
+        }}
+      />
     </div>
   );
 }
