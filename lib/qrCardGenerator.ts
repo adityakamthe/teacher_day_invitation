@@ -11,7 +11,9 @@ export interface QrItem {
 }
 
 export async function generateQrCardBlob(item: QrItem, origin: string): Promise<Blob> {
-  const inviteUrl = item.isVip
+  const inviteUrl = item.slug === "students"
+    ? `${origin}/invite/students`
+    : item.isVip
     ? `${origin}/invite/vip/${item.slug}`
     : `${origin}/invite/${item.slug}`;
 

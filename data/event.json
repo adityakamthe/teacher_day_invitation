@@ -13,6 +13,8 @@
     "transliteration": "tamaso mā jyotir gamaya",
     "meaning": "Lead me from darkness into light"
   },
+  "dressCode": "Pastel Colors",
+  "dressCodeNote": "Come dressed in your favourite soft pastel shades — pinks, mints, lavenders, baby blues, and peaches — and let's make the celebration as colorful as our gratitude!",
   "message": {
     "salutation": "Dear Respected",
     "lead": "On this special occasion of Teachers' Day, we want to take a moment to express our deepest gratitude for everything you do for us.",
@@ -23,5 +25,16 @@
     ],
     "closing": "Wishing you a very Happy Teachers' Day!",
     "signature": "With immense gratitude & respect,\nTeam Aces (Computer Engineering Students)"
+  },
+  "studentMessage": {
+    "salutation": "Dear",
+    "lead": "Let's come together to express our heartfelt gratitude and celebrate the amazing teachers and mentors of our Computer Engineering Department!",
+    "paragraphs": [
+      "Teachers' Day is our special opportunity to honor the professors, lecturers, and technical staff who guide, inspire, and shape our future each day.",
+      "Join us for an uplifting celebration packed with heartfelt tributes, fun interactive activities, and memorable moments with our faculty.",
+      "Please note the Pastel Dress Code and make sure to take your seats in the Seminar Hall by 9:45 AM sharp so we can begin on time."
+    ],
+    "closing": "Let's make this day unforgettable for our teachers!",
+    "signature": "With enthusiasm & unity,\nTeam Aces (ACES Student Committee)\nDepartment of Computer Engineering"
   }
 }

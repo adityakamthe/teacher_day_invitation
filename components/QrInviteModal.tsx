@@ -31,6 +31,7 @@ export default function QrInviteModal({ person, isOpen, onClose }: QrInviteModal
   const getFullUrl = () => {
     if (!person) return "";
     const origin = typeof window !== "undefined" ? window.location.origin : "https://teachers-day-invite.vercel.app";
+    if (person.slug === "students") return `${origin}/invite/students`;
     return person.isVip ? `${origin}/invite/vip/${person.slug}` : `${origin}/invite/${person.slug}`;
   };
 

@@ -80,19 +80,17 @@ export default function HomePage() {
             href="/invite"
             className="w-full sm:w-auto py-3.5 px-8 rounded-full bg-gradient-to-r from-gold via-gold-deep to-maroon text-paper font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 border border-gold-light/40"
           >
-            <span>View All 24 Invitations</span>
+            <span>Faculty &amp; VIP Directory</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
 
-          {firstFaculty && (
-            <Link
-              href={`/invite/${firstFaculty.slug}`}
-              className="w-full sm:w-auto py-3.5 px-6 rounded-full bg-sand/60 hover:bg-sand border border-gold/40 text-maroon font-semibold text-sm transition-all duration-200 flex items-center justify-center gap-2"
-            >
-              <Heart className="w-4 h-4 text-flame" />
-              <span>Preview Demo Card</span>
-            </Link>
-          )}
+          <Link
+            href="/invite/students"
+            className="w-full sm:w-auto py-3.5 px-6 rounded-full bg-sand/80 hover:bg-sand border border-gold/50 text-maroon font-semibold text-sm shadow-sm transition-all duration-200 flex items-center justify-center gap-2"
+          >
+            <Sparkles className="w-4 h-4 text-flame" />
+            <span>Student Invite &bull; Pastel Dress Code</span>
+          </Link>
         </div>
       </div>
     </main>

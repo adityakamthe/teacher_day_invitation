@@ -16,7 +16,9 @@ import {
   Grid,
   List,
   FileArchive,
-  GraduationCap
+  GraduationCap,
+  Shirt,
+  Users
 } from "lucide-react";
 import JSZip from "jszip";
 import facultyData from "@/data/faculty.json";
@@ -60,6 +62,13 @@ export default function InviteIndexPage() {
     setTimeout(() => setCopiedSlug(null), 2500);
   };
 
+  const getStudentWhatsAppShareUrl = () => {
+    const origin = typeof window !== "undefined" ? window.location.origin : "";
+    const url = `${origin}/invite/students`;
+    const text = `Dear Computer Department Students (SE, TE & BE), Team Aces warmly invites you to celebrate Teacher's Day 2026! ✨\n\n✨ Dress Code: Pastel Colors 🎨\nDate: ${eventData.date}\nTime: ${eventData.time}\nVenue: ${eventData.venue}\n\nOpen your 3D envelope invitation here: ${url}`;
+    return `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+  };
+
   const getVipWhatsAppShareUrl = (name: string, slug: string) => {
     const origin = typeof window !== "undefined" ? window.location.origin : "";
     const url = `${origin}/invite/vip/${slug}`;
@@ -86,8 +95,23 @@ export default function InviteIndexPage() {
     try {
       const zip = new JSZip();
       const origin = typeof window !== "undefined" ? window.location.origin : "https://teachers-day-invite.vercel.app";
-      const totalItems = vipData.length + facultyData.length;
+      const totalItems = vipData.length + facultyData.length + 1;
       let completed = 0;
+
+      // 0. Student Community Card
+      const studentFolder = zip.folder("00_Student_Invitation");
+      const studentBlob = await generateQrCardBlob(
+        {
+          slug: "students",
+          name: "Computer Dept Students",
+          designation: "All SE, TE & BE Students",
+          isVip: false,
+        },
+        origin
+      );
+      studentFolder?.file("00_Student_Community_Pastel_Invite_QR.png", studentBlob);
+      completed++;
+      setZipProgress(Math.round((completed / totalItems) * 100));
 
       // 1. VIP Cards
       const vipFolder = zip.folder("01_VIP_Dignitaries");
@@ -250,6 +274,115 @@ export default function InviteIndexPage() {
         {/* TAB 1: Standard Directory View */}
         {activeTab === "directory" && (
           <div className="space-y-8">
+            {/* Student Community & Pastel Dress Code Invitation Banner */}
+            <div className="bg-gradient-to-r from-amber-50/90 via-orange-50/70 to-rose-50/80 p-6 rounded-3xl border-2 border-gold/50 shadow-card-warm space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-gold/30 pb-3">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-10 h-10 rounded-xl bg-gold/20 flex items-center justify-center text-maroon border border-gold/40">
+                    <Users className="w-5 h-5 text-maroon" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-bold text-gold-deep uppercase tracking-widest block">
+                      General Student Audience Invitation
+                    </span>
+                    <h2 className="font-serif font-bold text-2xl text-maroon">
+                      Computer Dept Students &mdash; All SE, TE &amp; BE
+                    </h2>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand/80 border border-gold/40 text-xs font-semibold text-maroon self-start sm:self-auto">
+                  <Shirt className="w-3.5 h-3.5 text-flame" />
+                  <span>Dress Code: <b>Pastel Colors</b></span>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div className="space-y-2 max-w-xl">
+                  <p className="text-xs text-ink-soft leading-relaxed">
+                    A shared, beautifully animated 3D invitation card for all students of Computer Engineering with dedicated pastel dress code swatches, celebration schedule, and Team Aces message note.
+                  </p>
+                  
+                  {/* Swatches preview */}
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="text-[11px] font-semibold text-ink-soft">Palette:</span>
+                    {[
+                      { name: "Pink", color: "#F8D7DA", text: "#721C24" },
+                      { name: "Mint", color: "#D5F0E3", text: "#155724" },
+                      { name: "Lavender", color: "#E6D9F5", text: "#381E72" },
+                      { name: "Baby Blue", color: "#D6EAF8", text: "#1B4F72" },
+                      { name: "Peach", color: "#FDEBD0", text: "#7E5109" },
+                    ].map((s) => (
+                      <span
+                        key={s.name}
+                        className="text-[10px] font-semibold px-2 py-0.5 rounded-full border border-black/10 shadow-2xs"
+                        style={{ backgroundColor: s.color, color: s.text }}
+                      >
+                        {s.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-2 w-full md:w-auto">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      openQrModal({
+                        slug: "students",
+                        name: "Computer Dept Students",
+                        designation: "All SE, TE & BE Students",
+                        isVip: false,
+                        sender: "Team Aces",
+                      })
+                    }
+                    className="py-2 px-3 rounded-xl bg-gold/15 hover:bg-gold/25 text-xs font-bold text-maroon flex items-center gap-1.5 border border-gold/30 transition"
+                  >
+                    <QrIcon className="w-4 h-4 text-gold-deep" />
+                    <span>QR Pass</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => copyLink("/invite/students", "students")}
+                    className="py-2 px-3.5 rounded-xl bg-sand/60 hover:bg-sand text-xs font-semibold text-ink flex items-center gap-1.5 border border-gold/30 transition"
+                  >
+                    {copiedSlug === "students" ? (
+                      <>
+                        <Check className="w-4 h-4 text-emerald-600" />
+                        <span className="text-emerald-700 font-bold">Copied!</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-4 h-4 text-gold-deep" />
+                        <span>Copy Link</span>
+                      </>
+                    )}
+                  </button>
+
+                  <a
+                    href={getStudentWhatsAppShareUrl()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-2 px-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-paper text-xs font-bold flex items-center gap-1.5 shadow-sm transition"
+                    title="Share to Student WhatsApp Groups"
+                  >
+                    <Share2 className="w-4 h-4" />
+                    <span>Share to Students</span>
+                  </a>
+
+                  <Link
+                    href="/invite/students"
+                    target="_blank"
+                    className="py-2 px-4 rounded-xl bg-maroon hover:bg-maroon-deep text-paper text-xs font-bold flex items-center gap-1.5 shadow-sm transition"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    <span>Preview Card</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             {/* VIP Dignitaries & Leadership Section */}
             {filteredVips.length > 0 && (
               <div className="space-y-4 bg-gradient-to-r from-sand/30 via-gold-light/20 to-sand/30 p-6 rounded-3xl border border-gold/40 shadow-sm">
@@ -417,6 +550,39 @@ export default function InviteIndexPage() {
         {/* TAB 2: QR Gallery Grid (Direct QR Cards) */}
         {activeTab === "qr-gallery" && (
           <div className="space-y-8">
+            {/* Student Community QR Pass */}
+            <div className="space-y-4 bg-gradient-to-r from-amber-50/90 via-orange-50/70 to-rose-50/80 p-6 rounded-3xl border-2 border-gold/50 shadow-sm">
+              <div className="flex items-center gap-2 border-b border-gold/30 pb-2">
+                <Users className="w-5 h-5 text-maroon" />
+                <h2 className="font-serif font-bold text-xl text-maroon">
+                  Student Community QR Pass &mdash; All SE, TE &amp; BE
+                </h2>
+                <span className="ml-auto text-xs font-semibold text-gold-deep bg-sand/80 px-3 py-1 rounded-full border border-gold/30">
+                  ✨ Pastel Dress Code
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <QrGridCard
+                  person={{
+                    slug: "students",
+                    name: "Computer Dept Students",
+                    designation: "All SE, TE & BE Students",
+                    isVip: false,
+                  }}
+                  onOpenModal={() =>
+                    openQrModal({
+                      slug: "students",
+                      name: "Computer Dept Students",
+                      designation: "All SE, TE & BE Students",
+                      isVip: false,
+                    })
+                  }
+                  whatsAppUrl={getStudentWhatsAppShareUrl()}
+                />
+              </div>
+            </div>
+
             {/* VIP QR Cards */}
             {filteredVips.length > 0 && (
               <div className="space-y-4 bg-sand/30 p-6 rounded-3xl border border-gold/40">
